@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a session form</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap');
+
+html{
+    font-family:montagu Slab ;
+}
+body{
+    background-image: url(https://dm6g3jbka53hp.cloudfront.net/static-images/cute-dogs-grooming-20200522.jpg);width: 100%;border: 0;vertical-align: middle;
+    background-repeat: no-repeat;
+}
+@media(min-width: 768px){}
+.container{
+    max-width: 720px;
+}
+.container{
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: -10%;
+    padding-top: -10%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+*{
+    box-sizing: border-box;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.d-flex{
+    display: flex;
+}
+.row{
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.col-6.col-sm-9,.col-sm-10{
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+@media(min-width: 768px){}
+.col-sm-10{
+    flex: 0 0 83%;
+    max-width: 83%;
+}
+.boarding form{
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    padding: 50px 0;
+}
+.aa-1{
+margin-bottom: 3rem;
+margin-top: 3rem;
+}
+.text-center{
+    text-align: center;
+}
+@media (min-width: 640px){}
+.col-sm-9 {
+    -webkit-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+form{
+    display: block;
+}
+.form-group{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.boarding-form form .form-control{
+    background-color: transparent;
+    border-width: 0 0 1px;
+    padding: 0.8571rem 0;
+}
+.boarding-form form input{
+text-align: center;
+}
+.form-control{
+    height: auto;
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background-clip: padding-box;
+    border: 1px solid black;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input{
+    overflow: visible;
+}
+.col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-10 col-lg-9">
+                <div class="boarding-form aa-1">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-10">
+                            <h2>
+                                Add The Following Details-
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-9 col-lg-9 col-sm-9 text-center">
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="UserName" id="UserName" placeholder="Your Name*">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="PetName" id="PetName" placeholder="Your Pet's Name">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input class="form-control" type="number" min="0" name="PetAgeYear" id="PetAgeYear" placeholder="Pet's Age Years*">
+                                        </div>
+                                        <div class="col-6">
+                                            <input class="form-control" type="number" min="0" name="PetAgeMonths" id="PetAgeMonths" placeholder="Pet's Age Months*">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input class="form-control" type="number" name="PetWeightKgs" id="PetWeightsKgs" placeholder="Your Pet's Weight in kg*">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input class="form-control" type="text" name="BreedName" id="BreedName" placeholder="Breed Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Phone Number*">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" name="Email" id="Email" placeholder="Email Address*">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="Address" id="Address" placeholder="Address">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" name="PinCode" id="PinCode" placeholder="Pincode*">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="CityName" id="CityName" placeholder="City Name*">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="StateName" id="StateName" placeholder="State Name">
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" style="background-color: rgb(15,61,63); cursor: pointer;color: white;border-color: rgb(15,61,63);margin-bottom: 0;width: 100%;height: 40px;font-size: 22px;max-width: 340px;font-weight: 700; ">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(247, 247, 238);
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+h1{font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(99, 3, 3);
+text-align: center;
+background-color: rgb(245, 157, 157);
+}
+h2{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(99, 3, 3);
+}
+p{font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  align:justify-content;}
+
+li{font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}

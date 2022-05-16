@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Training</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap');
+
+html{
+    font-family:montagu Slab ;
+}
+section{
+    display: block;
+}
+.funnel-section{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+.banner-image.visible{
+    background-image: url(https://dm6g3jbka53hp.cloudfront.net/static-images/tpn-dog-training-home.jpg);
+}
+.banner-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(.4);
+    height: 500px;
+    position: absolute;
+    width: 100%;
+}
+.banner-content{
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner-description{
+    margin-bottom: 24px;
+    font-size: 26px;
+}
+.banner-link{
+    max-width: 340px;
+    width: 100%;
+}
+.banner-link button{
+    color: white;
+    background-color: rgb(255, 92, 40);
+    border-color: rgb(255, 92, 40);
+    margin-bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    max-width: 340px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button {
+    appearance: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-image: initial;
+}
+.home-training-usp-section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.home-training-usp-section .grooming-heading{
+    margin-bottom: 0;
+}
+.grooming-heading{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 0;
+}
+.home-training-usp-section .training-subtitle{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.dog-training-importance{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.dti-item.tech{
+    background-color: rgb(164, 211, 212);
+    color: black;
+}
+.dog-training-importance .dti-item{
+    max-width: 300px;
+}
+.dog-training-importance .bg-image , img{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+.bg-tech-image.banner-image.visible {
+    background-image: url(https://dm6g3jbka53hp.cloudfront.net/static-images/pet-beach-clouds-dog-09052020-v1.jpg)
+
+}
+.dog-training-importance .dti-content{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.dog-training-importance h4{
+    letter-spacing: 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
+.dog-training-importance p{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+}
+.dti-item.bond{
+    background-color: rgb(15, 61, 63);
+    color: white;
+}
+.dog-training-importance .dti-item{
+    max-width: 300px;
+}
+.dog-training-importance .bg-image{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+.bg-bond-image.banner-image.visible{
+    background-image: url(https://assets.entrepreneur.com/content/3x2/2000/1589538284-dogpuppy.jpg);
+}
+.dti-item.social{
+    background-color: rgb(164, 211, 212);
+    color: black;
+}
+.bg-social-image.visible{
+    background-image: url(https://akccanineretreat.com/wp-content/uploads/2018/05/puppy-socialization-hero.jpg);
+}
+.dti-item.mental{
+    background-color: rgb(15, 61, 63);
+    color: white;
+}
+.bg-mental-image.visible{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqJOxWx9GnAK8vUcVK1LNVLrDtwnJeU_GNbvpsO1k-wOmqrgh3pBFuPdrxz6XPoIfMw8&usqp=CAU);
+}
+.home-training-section{
+    background-color: #f4f5f6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: larger;
+}
+.flex-home-grooming{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: larger;
+}
+@media (min-width: 768px){
+.container{
+    width: 750px;
+}
+.container, .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.grooming.usp{
+    padding-right: 25px;
+}
+.home-grooming-img{
+    max-width: 650px;
+    max-height: 455px;
+    width: auto;
+}
+.center-block,img{
+    display: block;
+}
+.main{
+    background-color: rgb(164, 211, 212);
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.container{
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 120px;
+}
+
+.col{
+    height: 650px;
+    width: 300px;
+    float: left;
+    margin: 35px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+ul{
+    font-size: 14px;
+}
+.grooming-price-section .price-card-btn{
+    font-weight: 700;
+    color: white;
+    background-color: rgb(255, 92, 40);
+    border-color: rgb(255, 92, 40);
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.6;
+    user-select: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.profession-experience-section{
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+.profession-experience{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container, .container-fluid{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.grooming-heading{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 0;
+}
+.profession-experience-verified{
+    display: flex;
+    font-size: 20px;
+    align-items: end;
+    margin: 0 16px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 3px solid rgb(15,61,63);
+}
+.bcg-groomer{
+    margin: 0;
+    padding: 0 50px;
+    text-align: justify;
+}
+.ttl .breadcrumbs {
+    position: absolute;
+    left: 10;
+    right: 20;
+    top: 0;
+    color: rgb(164, 211, 212);
+    font-size: 14px;
+    padding: 10px 10px;
+    width: 100%;
+    background: black;
+    </style>
+</head>
+<body>
+    <section class="ttl">
+        <div class="nav">
+            <div id="BreadCrumb_divBreadCrumb" class="breadcrumbs">
+                <div id="BreadCrumb_lblBreadCrumb" class="wrapper"><a style=" color: rgb(164,211,212);" href="Main Page.html"><b>Home ></b></a><a style="color: rgb(164, 211, 212);" href="dog training.html"><b>Dog Training </b> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="funnel-section smart_bg_image visible">
+        <div class="banner-image smart_bg_image visible"></div>
+        <div class="banner-content">
+            <h1>Dog Training Service at Home</h1>
+        <div class="banner-description">Dog - friendly , one-on-one dog training</div>
+        <a class="banner-link" href="https://dm6g3jbka53hp.cloudfront.net/static-images/tpn-dog-training-home.jpg"></a>
+        <button type="button" style="background-color: rgb(255, 92, 40); 
+        cursor: pointer;
+        color: white;
+        border-color: rgb(255, 92, 40);
+        margin-bottom: 0;
+        width: 100%;
+        height: 60px;
+        font-size: 22px;
+        max-width: 340px;
+        font-weight: 700; ">Book a Session</button>
+        </div>
+    </section>
+    <section class="home-training-usp-section">
+        <h2 class="grooming-heading">Dog Training - Why it is so important?</h2>
+        <p class="training-subtitle">Dog Training is an investment that pays off by making life with your dog easier and more enjoyable.</p>
+        
+        <div class="dog-training-importance">
+          <div class="dti-item tech">
+            <div class="bg-image bg-tech-image smart_bg_image"><img src="https://dm6g3jbka53hp.cloudfront.net/static-images/pet-beach-clouds-dog-09052020-v1.jpg" alt=""></div>
+            <div class="dti-content">
+              <h4>Management Techniques</h4>
+              <p>We give you the tools to set your family to be successful.</p>
+            </div>
+          </div>
+    
+          <div class="dti-item bond">
+            <div class="bg-image bg-bond-image smart_bg_image"><img src="https://assets.entrepreneur.com/content/3x2/2000/1589538284-dogpuppy.jpg" alt=""></div>
+            <div class="dti-content">
+              <h4>Strengthen Bond</h4>
+              <p>We help you bridge the gap between you and your dog.</p>
+            </div>
+          </div>
+      
+          <div class="dti-item social">
+                <div class="bg-image bg-social-image smart_bg_image"><img src="https://akccanineretreat.com/wp-content/uploads/2018/05/puppy-socialization-hero.jpg" alt=""></div>
+            <div class="dti-content">
+              <h4>Socialization</h4>
+              <p>Training increases your dog's confidence to explore the surroundings.</p>
+            </div>
+          </div>
+    
+          <div class="dti-item mental">
+            <div class="bg-image bg-mental-image smart_bg_image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqJOxWx9GnAK8vUcVK1LNVLrDtwnJeU_GNbvpsO1k-wOmqrgh3pBFuPdrxz6XPoIfMw8&usqp=CAU" alt=""></div>
+            <div class="dti-content">
+              <h4>Mental Stimulation</h4>
+              <p>Engaging your dog's mind is as important as physical exercise.</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="home-training-section" style="color: #515252 ;">
+        <div class="flex-home-grooming container">
+          <div class="grooming-usp">
+            <h4>A Dog-Friendly training experience</h4>
+            <h5>Our Trainers & Methods</h5>
+            <p>
+              Furry Paws certified pet trainers are educated and passionate about the well-being of pets and pet parents and are
+              dedicated to strengthening the bond between them.
+            </p>
+            <ul style="font-size: large;">
+              <li style="text-align: left;">Instructors are taught science-based training principles that reward appropriate dog behaviors instead of punishing negative ones.</li>
+              <li style="text-align: left;">Positive Dog Training at home is a rewards-based approach to teaching pet parents how dogs think, learn, and communicate with others.</li>
+              <li style="text-align: left;">Our dog trainers can build customized training plans to meet your goals and lifestyle.</li>
+            </ul>
+          </div>
+          <img  alt="img" src="image.jpg" style="margin-left: 100px;" >
+        </div>
+      </section>
+      <section class="grooming-price-section">
+        <div class="main">
+            <h1 style="text-align: center;color: black;">Dog Training Packages</h1>
+            <p style="text-align: center;color: black;font-size: 25px;">(Charges may vary based on Pet and City.)</p><br><br>
+            <div class="container">
+                <div class="col">
+                    <h2>Online Dog Training Program</h2> &nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 9900</strike><h2 style="color: red;">Rs 7499</h2>
+                <ul>
+                    <li> <strong>Canine behaviour - 3 Sessions</strong> <br>
+                      Home Socialization, Overexcitement, Excessive Barking</li>
+                      <li> <strong>Society Manners - 3 Sessions</strong> <br>
+                      Leash Walking, Socialization with other Pets</li>
+                      <li><strong>Obedience Commands - 3 Sessions</strong> <br>
+                      Sit, Down, Stay & Come Commands</li>
+                      <li>3 Complimentary Commands</li>
+                      <li>Diet Chart</li>
+                      <li> First demo session - ₹500</li>
+                      <li><strong>VALUE ADDED</strong><br>Vet Assistance (Online Vet Consultation), 20% Off On First Grooming <br> Training Completion Certificate</li>
+                      <li><strong>REQUIREMENTS</strong> <br> This package is for puppies & dogs 5 months and older <br>
+                        Be prepared to practice daily for at least 30 minutes</li>
+                </ul>
+                <br>
+                <a href="" target="_top"></a>
+                <button class="price-card-btn" type="button">Book A Session</button>
+            </div>
+            <div class="col">
+                <h2>Puppy Socialization Package</h2> &nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 1199</strike><h2 style="color: red;">Rs 999</h2>
+                <ul>
+                    <li> Puppy-proofing your home</li>
+                    <li> Socialization with human & other pets</li>
+                    <li> Leash walking</li>
+                    <li> Diet Chart</li>
+                    <li> House manners (sit, down, stay, off)</li>
+                    <li> Potty Training</li>
+                    <li> Biting</li>
+                    <li> First demo session - ₹500</li>
+                    <li><strong>VALUE ADDED</strong> <br> Vet Assistance (Online Vet Consultation) <br>20% Off On First Grooming <br>Training Completion Certificate</li>
+                    <li><strong>REQUIREMENTS</strong> <br>Puppy must have their full round of vaccinations prior to starting these sessions <br>This package is for puppies & dogs 5 months and older</li>
+                </ul>
+                <br>
+                &nbsp;&nbsp;
+                <a href="" target="_top"></a>
+                <button class="price-card-btn" type="button">Book A Session</button>
+            </div>
+            <div class="col">
+                <h2>Basic Obedience Training</h2> &nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 1199</strike><h2 style="color: red;">Rs 999</h2>
+                <ul>
+                    <li> Loose leash walking</li>
+                    <li> Polite greeting</li>
+                    <li> Stand/Stay</li>
+                    <li> Sit/No Commands</li>
+                    <li> Excessive barking</li>
+                    <li> Diet Chart</li>
+                    <li> Advanced (2 Tricks)</li>
+                    <li><strong>VALUE ADDED</strong> <br>Vet Assistance (Online Vet Consultation) <br> 20% Off On First Grooming <br> Training Completion Certificate</li>
+                    <li><strong>REQUIREMENTS</strong> <br> Dogs must have their full round of vaccinations prior to starting these sessions <br>This package is for puppies & dogs 5 months and older <br> Be prepared to practice daily for at least 30 minutes </li>
+                </ul>
+                <br>
+                &nbsp;&nbsp;
+                <a href="" target="_top"></a>
+                <button class="price-card-btn" type="button">Book A Session</button>
+            </div>
+        </div>
+      </section>
+      <section class="profession-experience-section">
+    <div class="container profession-experience">
+      <h2 class="grooming-heading">
+        How does it work?
+      </h2>
+      <div class="profession-experience-verified">
+        <p class="bcg-groomer">
+          Every puppy and dog has a different temperament and nature & dog training is an excellent step
+          to improve your relationship with your dog. To understand more, you can Book a Session
+          for canine behavioral assessment which helps you to find the best dog training program for your dog.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div style="background-color: rgb(15, 61, 63);margin-top: 30px;padding-top: 20px;padding-bottom: 20px;">
+        <p style="color: white; text-align: center;font-size: 30px;"><b>Professional Training Experience of minimum<br> 3+ years</b> is mandatory for all trainers on <br>Furry Paws. We verify each and every Trainer to<br> ensure that your pet is in safe & skilled hands.</p>
+    </div>
+    <br><br>
+  </section>
+<hr>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap');
+
+html{
+    font-family:montagu Slab ;
+}
+main{
+    align-items: center;
+    height: 230px;
+    width: 800px;
+    border:  solid rgb(194, 193, 193);
+    box-shadow: 1px 1px 10px 3px rgb(168, 163, 163);
+    margin-left: 280px;
+    margin-right: 400px;
+    color: rgb(66, 65, 65);
+    padding-bottom: 43px;
+    margin-bottom: 100px;
+}
+
+.image img{
+    height: 400px;
+    width: 500px;
+    margin-left: 170px;
+}  
+
+.grooming{
+    float: right;
+    margin-top: -400px;
+    margin-right: 100px;
+}
+.las{
+    font-size: 40px;
+    padding: 0px 10px;
+    float: left;
+}
+.main{
+    background-color: rgb(164, 211, 212);
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+}
+.container{
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 120px;
+}
+
+.col{
+    height: 650px;
+    width: 300px;
+    float: left;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+ul{
+    font-size: 18px;
+}
+/**.
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}*/
+/*section used for centering process*/
+section{
+    width: 80%;
+    height: 100vh;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1{
+    width: 80%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding:  0 1.5rem;
+}
+
+
+.accordian-item{
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px 3px grey;
+}
+
+.accordian-link{
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(47, 100, 100);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  1rem 0;
+}
+
+.accordian-link i{
+    
+    padding: .1rem;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(235, 122, 57);
+    transition: max-height 650ms;
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .3rem;
+    height: 50%;
+   
+    top: 50%;
+    left: 0;
+    transform: translate(.50%);
+    
+}
+.answer p{
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.accordian-item:target .answer{
+    max-height: 20rem;
+}
+/*.accordian-item:target .accordian-link .ion-icon-add{
+    display: none;
+}
+.accordian-item:target .accordian-link .ion-icon-remove{
+    display: block;
+}*/
+.ttl .breadcrumbs {
+    position: absolute;
+    left: 10;
+    right: 20;
+    top: 0;
+    color: rgb(164, 211, 212);
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 98.7%;
+    background: black;
+    margin-left: -160px;
+}
+section{
+    display: block;
+}
+
+

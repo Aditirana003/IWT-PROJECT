@@ -1,0 +1,114 @@
+.body{
+    background-color: rgb(153, 239, 241);
+    font-family: Arial, Helvetica, sans-serif;
+   border: 8px solid rgb(55, 145, 150); 
+   border-radius: 11px;
+}
+.navbar{
+    width: 97%;
+    margin:0px;
+    padding: 0px;
+    align-items:right;
+    display: flex;
+    margin-bottom: 30px;
+    
+    
+}
+.navbar ul li{
+    float: right;
+    width: 200px;
+    height: 40px;
+    list-style: none;
+    opacity: .8;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 100px;
+    
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(5, 45, 46);
+    display: block;
+    font-size: 25px;
+}
+    
+.navbar ul li a:hover{
+    background-color: cadetblue;
+    box-shadow: 1px 2px 10px 3px rgb(182, 177, 177);
+}
+.navbar ul li ul li{
+    display: none;
+    font-size: 20px;
+   
+}
+
+.navbar ul li:hover ul li{
+    display: block;
+}
+
+.div h1{
+    margin-left: 150px;
+    font-family: sans-serif;
+    padding: 10px 0px 10px 0px;
+
+}
+.div  pre{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left:150px ;
+}
+
+.img{
+    height: 500px;
+    width: 300px;
+    float:right;
+    margin-right: 300px;
+    margin-top: 260px;
+}
+
+.img1{
+    height: 180px;
+    width: 250px;
+    margin-left: 180px;
+    margin-top: 100px;
+}
+.box{
+    display: inline-block;
+    border: 3px solid black;
+    width: 320px;
+    height: 220px;
+    background-color:white;
+    float: right;
+    margin-top: 80px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+    margin-right: 200px;
+    box-shadow: 1px 2px 10px 3px rgb(68, 67, 67);
+}
+.maindiv{
+    width:98%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-image: url(dd1.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px rgb(160, 155, 155);
+    animation: slider 15s infinite linear;
+    clear:both;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+@keyframes slider{
+    0%{background-image: url(dd1.jpg);}
+    25%{background-image: url(dd4.jpg);}
+    55%{background-image: url(dd3.jpg);}
+    80%{background-image: url(dd2.jpg);}
+}
